@@ -18,6 +18,5 @@ public class AlfredTest {
 
         AlfredQuotes alfredBot6 = new AlfredQuotes();
         System.out.println(alfredBot6.respondBeforeAlexis("Maybe that's what Batman is about. Not winning. But failing.."));
-
     }
 }

@@ -1,4 +1,5 @@
 import java.util.Date;
+
 public class AlfredQuotes {
     public String basicGreeting() {
         return "Hello, lovely to see you. How are you?";
