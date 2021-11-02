@@ -1,6 +1,12 @@
-public class test1{
-public static void main(String[] args) {
-              for(int i=0; i<3; i++){
-                            System.out.println(i);
-}}
+import java.util.HashMap;
+
+public class TrackList {
+  public void trackList() {
+    HashMap<String, String> tracks = new HashMap<>();
+    tracks.put("You right", "HHHHH");
+    tracks.put("Save your Tears", "MMMMMM");
+    tracks.put("Triator", " NNNNNN");
+    tracks.put("My Universe", "OOOOOO");
+    System.out.println( tracks.get("Triator"));
+  }
 }
