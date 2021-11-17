@@ -12,11 +12,13 @@ public class HomeDojoSurvey {
 	}
 	@RequestMapping("/result")
 	public String resultSurvey(@RequestParam("firstName") String firstName,
-			@RequestParam("locatin") String location,
-			@RequestParam( "program") String program) {
-			model.addAttribute("firstName", fName);
-			model.addAttribute("location", location);
-			model.addAttribute("program", program);
+			@RequestParam("location") String location,
+			@RequestParam( "program") String program, Model model,
+			HttpSession mysession) {
+		model.addAttribute("firstName", fName);
+		model.addAttribute("location", location);
+		model.addAttribute("program", program);
+		mysession.setAttribute("firstName",fName);
 		return "result.jsp";
 	}
 
