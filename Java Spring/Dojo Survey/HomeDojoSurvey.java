@@ -14,6 +14,9 @@ public class HomeDojoSurvey {
 	public String resultSurvey(@RequestParam("firstName") String firstName,
 			@RequestParam("locatin") String location,
 			@RequestParam( "program") String program) {
+			model.addAttribute("firstName", fName);
+			model.addAttribute("location", location);
+			model.addAttribute("program", program);
 		return "result.jsp";
 	}
 
